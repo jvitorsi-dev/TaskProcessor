@@ -1,0 +1,104 @@
+name: dockercompose5342113634810522845
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    networks:
+      taskprocessor-net: null
+    ports:
+      - mode: ingress
+        target: 27017
+        published: "27017"
+        protocol: tcp
+  rabbitmq:
+    container_name: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_PASS: mypassword
+      RABBITMQ_DEFAULT_USER: myuser
+    image: rabbitmq:management
+    networks:
+      taskprocessor-net: null
+    ports:
+      - mode: ingress
+        target: 5672
+        published: "5672"
+        protocol: tcp
+      - mode: ingress
+        target: 15672
+        published: "15672"
+        protocol: tcp
+  taskprocessor:
+    build:
+      context: C:\Users\Win\Documents\Projetos\TaskProcessor
+      dockerfile: TaskProcessor/Dockerfile
+    depends_on:
+      mongodb:
+        condition: service_started
+        required: true
+      rabbitmq:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+      MongoDbSettings__ConnectionString: mongodb://mongodb:27017
+    image: taskprocessor
+    networks:
+      taskprocessor-net: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "5000"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\Win\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Win\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Win\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Win\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  worker:
+    build:
+      context: C:\Users\Win\Documents\Projetos\TaskProcessor
+      dockerfile: TaskProcessor.EmailJobWorker/Dockerfile
+    depends_on:
+      mongodb:
+        condition: service_started
+        required: true
+      rabbitmq:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      MongoDbSettings__ConnectionString: mongodb://mongodb:27017
+    networks:
+      taskprocessor-net: null
+networks:
+  taskprocessor-net:
+    name: dockercompose5342113634810522845_taskprocessor-net
+    driver: bridge

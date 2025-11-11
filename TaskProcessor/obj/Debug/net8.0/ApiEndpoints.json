@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "TaskProcessor.Controllers.JobsController",
+    "Method": "GetStatus",
+    "RelativePath": "api/Jobs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskProcessor.Controllers.JobsController",
+    "Method": "CriarJobExemplo",
+    "RelativePath": "api/Jobs/seed",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskProcessor.Controllers.JobsController",
+    "Method": "CreateJob",
+    "RelativePath": "api/Jobs/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobRequest",
+        "Type": "TaskProcessor.Application.DTOs.JobRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

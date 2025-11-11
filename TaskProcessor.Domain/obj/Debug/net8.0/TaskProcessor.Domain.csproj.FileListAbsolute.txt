@@ -1,0 +1,12 @@
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\bin\Debug\net8.0\TaskProcessor.Domain.deps.json
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\bin\Debug\net8.0\TaskProcessor.Domain.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\bin\Debug\net8.0\TaskProcessor.Domain.pdb
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\obj\Debug\net8.0\TaskProcessor.Domain.csproj.AssemblyReference.cache
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\obj\Debug\net8.0\TaskProcessor.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\obj\Debug\net8.0\TaskProcessor.Domain.AssemblyInfoInputs.cache
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\obj\Debug\net8.0\TaskProcessor.Domain.AssemblyInfo.cs
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\obj\Debug\net8.0\TaskProcessor.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\obj\Debug\net8.0\TaskProcessor.Domain.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\obj\Debug\net8.0\refint\TaskProcessor.Domain.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\obj\Debug\net8.0\TaskProcessor.Domain.pdb
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Domain\obj\Debug\net8.0\ref\TaskProcessor.Domain.dll

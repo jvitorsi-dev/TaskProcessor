@@ -1,0 +1,430 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Tests\\TaskProcessor.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Application\\TaskProcessor.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Application\\TaskProcessor.Application.csproj",
+        "projectName": "TaskProcessor.Application",
+        "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Application\\TaskProcessor.Application.csproj",
+        "packagesPath": "C:\\Users\\Win\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Win\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Domain\\TaskProcessor.Domain.csproj": {
+                "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Domain\\TaskProcessor.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Domain\\TaskProcessor.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Domain\\TaskProcessor.Domain.csproj",
+        "projectName": "TaskProcessor.Domain",
+        "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Domain\\TaskProcessor.Domain.csproj",
+        "packagesPath": "C:\\Users\\Win\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Win\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.EmailJobWorker\\TaskProcessor.EmailJobWorker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.EmailJobWorker\\TaskProcessor.EmailJobWorker.csproj",
+        "projectName": "TaskProcessor.EmailJobWorker",
+        "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.EmailJobWorker\\TaskProcessor.EmailJobWorker.csproj",
+        "packagesPath": "C:\\Users\\Win\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.EmailJobWorker\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Win\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Application\\TaskProcessor.Application.csproj": {
+                "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Application\\TaskProcessor.Application.csproj"
+              },
+              "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Infrastructure\\TaskProcessor.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Infrastructure\\TaskProcessor.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.22.1, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Infrastructure\\TaskProcessor.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Infrastructure\\TaskProcessor.Infrastructure.csproj",
+        "projectName": "TaskProcessor.Infrastructure",
+        "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Infrastructure\\TaskProcessor.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Win\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Win\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Application\\TaskProcessor.Application.csproj": {
+                "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Application\\TaskProcessor.Application.csproj"
+              },
+              "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Domain\\TaskProcessor.Domain.csproj": {
+                "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Domain\\TaskProcessor.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Tests\\TaskProcessor.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Tests\\TaskProcessor.Tests.csproj",
+        "projectName": "TaskProcessor.Tests",
+        "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Tests\\TaskProcessor.Tests.csproj",
+        "packagesPath": "C:\\Users\\Win\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Win\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Application\\TaskProcessor.Application.csproj": {
+                "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Application\\TaskProcessor.Application.csproj"
+              },
+              "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Domain\\TaskProcessor.Domain.csproj": {
+                "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Domain\\TaskProcessor.Domain.csproj"
+              },
+              "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.EmailJobWorker\\TaskProcessor.EmailJobWorker.csproj": {
+                "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.EmailJobWorker\\TaskProcessor.EmailJobWorker.csproj"
+              },
+              "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Infrastructure\\TaskProcessor.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Infrastructure\\TaskProcessor.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

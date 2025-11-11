@@ -1,0 +1,15 @@
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\bin\Debug\net8.0\TaskProcessor.Application.deps.json
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\bin\Debug\net8.0\TaskProcessor.Application.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\bin\Debug\net8.0\TaskProcessor.Application.pdb
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\bin\Debug\net8.0\TaskProcessor.Domain.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\bin\Debug\net8.0\TaskProcessor.Domain.pdb
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\obj\Debug\net8.0\TaskProcessor.Application.csproj.AssemblyReference.cache
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\obj\Debug\net8.0\TaskProcessor.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\obj\Debug\net8.0\TaskProcessor.Application.AssemblyInfoInputs.cache
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\obj\Debug\net8.0\TaskProcessor.Application.AssemblyInfo.cs
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\obj\Debug\net8.0\TaskProcessor.Application.csproj.CoreCompileInputs.cache
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\obj\Debug\net8.0\TaskProc.15286767.Up2Date
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\obj\Debug\net8.0\TaskProcessor.Application.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\obj\Debug\net8.0\refint\TaskProcessor.Application.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\obj\Debug\net8.0\TaskProcessor.Application.pdb
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Application\obj\Debug\net8.0\ref\TaskProcessor.Application.dll

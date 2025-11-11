@@ -1,0 +1,17 @@
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\bin\Debug\net8.0\TaskProcessor.Infrastructure.deps.json
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\bin\Debug\net8.0\TaskProcessor.Infrastructure.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\bin\Debug\net8.0\TaskProcessor.Infrastructure.pdb
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\bin\Debug\net8.0\TaskProcessor.Application.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\bin\Debug\net8.0\TaskProcessor.Domain.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\bin\Debug\net8.0\TaskProcessor.Application.pdb
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\bin\Debug\net8.0\TaskProcessor.Domain.pdb
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\obj\Debug\net8.0\TaskProcessor.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\obj\Debug\net8.0\TaskProcessor.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\obj\Debug\net8.0\TaskProcessor.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\obj\Debug\net8.0\TaskProcessor.Infrastructure.AssemblyInfo.cs
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\obj\Debug\net8.0\TaskProcessor.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\obj\Debug\net8.0\TaskProc.8739A382.Up2Date
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\obj\Debug\net8.0\TaskProcessor.Infrastructure.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\obj\Debug\net8.0\refint\TaskProcessor.Infrastructure.dll
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\obj\Debug\net8.0\TaskProcessor.Infrastructure.pdb
+C:\Users\Win\Documents\Projetos\TaskProcessor\TaskProcessor.Infrastructure\obj\Debug\net8.0\ref\TaskProcessor.Infrastructure.dll

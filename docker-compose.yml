@@ -1,0 +1,66 @@
+# services:
+#   taskprocessor:
+#     image: ${DOCKER_REGISTRY-}taskprocessor
+#     build:
+#       context: .
+#       dockerfile: TaskProcessor/Dockerfile
+
+
+
+      
+
+services:
+
+  taskprocessor:
+
+    image: ${DOCKER_REGISTRY-}taskprocessor
+    build:
+      context: .
+      dockerfile: TaskProcessor/Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - rabbitmq
+      - mongodb
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - MongoDbSettings__ConnectionString=mongodb://mongodb:27017
+    networks:
+      - taskprocessor-net
+
+  worker:
+    build:
+      context: .
+      dockerfile: TaskProcessor.EmailJobWorker/Dockerfile
+    depends_on:
+      - rabbitmq
+      - mongodb
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - MongoDbSettings__ConnectionString=mongodb://mongodb:27017
+    networks:
+      - taskprocessor-net
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    environment:
+        RABBITMQ_DEFAULT_USER: myuser
+        RABBITMQ_DEFAULT_PASS: mypassword
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - taskprocessor-net
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - taskprocessor-net
+
+networks:
+  taskprocessor-net:
+    driver: bridge

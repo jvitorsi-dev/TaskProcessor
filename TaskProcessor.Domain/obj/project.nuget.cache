@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "3FsalXrRmQ0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Win\\Documents\\Projetos\\TaskProcessor\\TaskProcessor.Domain\\TaskProcessor.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Win\\.nuget\\packages\\mongodb.bson\\3.4.1\\mongodb.bson.3.4.1.nupkg.sha512",
+    "C:\\Users\\Win\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Win\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Win\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
