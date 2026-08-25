@@ -1,0 +1,16 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Docker
+*.dockerfile
+
+# Rider
+.idea/
+
+# Logs
+*.log
