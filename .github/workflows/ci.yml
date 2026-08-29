@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
+          cache: true
+          cache-dependency-path: '**/*.csproj'
 
       - name: Restaurar dependências
         run: dotnet restore TaskProcessor.sln
@@ -28,4 +30,4 @@ jobs:
         run: dotnet build TaskProcessor.sln --no-restore --configuration Release
 
       - name: Executar testes
-        run: dotnet test TaskProcessor.sln --no-build --configuration Release
+        run: dotnet test TaskProcessor.sln --no-build --configuration Release --logger "trx;LogFileName=test-results.trx"
