@@ -89,7 +89,7 @@ Testes de unidade com **xUnit** cobrindo o worker e a resolução de jobs (`JobS
 - [ ] Badge de cobertura de testes
 - [ ] Retry com política de DLQ (dead-letter queue)
 - [ ] Observabilidade com OpenTelemetry
-- [ ] Deploy público (demo ao vivo)
+- [ ] GIF do fluxo assíncrono rodando (Swagger → fila → worker)
 
 ## 📄 Licença
 
