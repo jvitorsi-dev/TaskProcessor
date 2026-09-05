@@ -1,96 +1,42 @@
-<div align="center">
+# TaskProcessor
 
-# 📨 TaskProcessor
-
-**Processamento assíncrono de tarefas e e-mails com .NET 8, RabbitMQ e MongoDB**
+API .NET para processamento assíncrono de tarefas: a requisição publica a tarefa numa fila do RabbitMQ e um worker processa em segundo plano, gravando o status no MongoDB.
 
 [![CI](https://github.com/jvitorsi-dev/TaskProcessor/actions/workflows/ci.yml/badge.svg)](https://github.com/jvitorsi-dev/TaskProcessor/actions/workflows/ci.yml)
-[![CD](https://github.com/jvitorsi-dev/TaskProcessor/actions/workflows/cd.yml/badge.svg)](https://github.com/jvitorsi-dev/TaskProcessor/actions/workflows/cd.yml)
-[![.NET](https://img.shields.io/badge/.NET-8.0-512BD4)](https://dotnet.microsoft.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-</div>
+## Sobre
 
-## 💡 O problema
+Projeto pessoal para estudar mensageria e separação de responsabilidades entre serviços. O código está dividido em camadas (Domain, Application, Infrastructure, API e Worker), com testes de unidade no `TaskProcessor.Tests`.
 
-Operações que demoram — envio de e-mail, geração de relatórios — não podem travar a resposta de uma API. Este projeto demonstra o padrão **produtor/consumidor**: a API recebe a requisição, publica a tarefa numa fila do **RabbitMQ** e responde imediatamente; um **background worker** processa a tarefa em segundo plano e persiste o status no **MongoDB**.
+## Tecnologias
 
-## ⚙️ Arquitetura
+- .NET 8 (ASP.NET Core)
+- RabbitMQ
+- MongoDB
+- Docker / Docker Compose
+- xUnit + GitHub Actions (CI)
 
-```mermaid
-flowchart LR
-    C["Cliente / Swagger"] -->|"POST /api/jobs/send"| API["TaskProcessor API<br/>(ASP.NET Core 8)"]
-    API -->|"publica mensagem"| Q[["RabbitMQ"]]
-    Q -->|"consome"| W["EmailJobWorker<br/>(Background Service)"]
-    W -->|"atualiza status"| M[("MongoDB")]
-    API --> M
-```
+## Funcionalidades
 
-## 📁 Estrutura (Clean Architecture)
+- `POST /api/jobs/send` — cria um job (tipo + dados) e publica na fila
+- `GET /api/jobs/{id}` — consulta o status de um job
+- `GET /api/jobs/seed` — cria um job de exemplo (EmailJob)
+- `EmailJobWorker` — background service que consome a fila e atualiza o status no MongoDB
 
-```
-TaskProcessor.sln
-├── TaskProcessor/                 # 🌐 API (controllers, Swagger)
-├── TaskProcessor.Application/     # ⚙️ Casos de uso, DTOs, serviços de aplicação
-├── TaskProcessor.Domain/          # 📦 Entidades, interfaces e regras de negócio
-├── TaskProcessor.Infrastructure/  # 🔌 RabbitMQ, MongoDB, repositórios
-├── TaskProcessor.EmailJobWorker/  # 🔄 Background worker (consumidor da fila)
-└── TaskProcessor.Tests/           # ✅ Testes com xUnit
-```
+## Como executar
 
-## 🚀 Como rodar
-
-Pré-requisitos: [Docker](https://www.docker.com/)
+Requisito: Docker.
 
 ```bash
-cp .env.example .env      # preencha RABBITMQ_USER e RABBITMQ_PASSWORD
+cp .env.example .env   # usuário e senha do RabbitMQ
 docker compose up --build
 ```
 
-| Serviço | URL |
-|---|---|
-| API | http://localhost:5000 |
-| Swagger | http://localhost:5000/swagger/index.html |
-- RabbitMQ Management (UI de gestão) | http://localhost:15672 
+API em `http://localhost:5000`, Swagger em `/swagger`.
 
-## 🔌 Endpoints
+Para rodar os testes: `dotnet test`.
 
-| Método | Rota | Descrição |
-|---|---|---|
-| `POST` | `/api/jobs/send` | Cria e enfileira um novo job |
-| `GET` | `/api/jobs/{id}` | Consulta o status de um job |
-| `GET` | `/api/jobs/seed` | Cria um job de exemplo (EmailJob) |
+## Próximos passos
 
-Exemplo:
-
-```bash
-curl -X POST http://localhost:5000/api/jobs/send \
-  -H "Content-Type: application/json" \
-  -d '{"tipo":"EmailJob","dados":"destinatario@exemplo.com"}'
-```
-
-## ✅ Testes
-
-```bash
-dotnet test
-```
-
-Testes de unidade com **xUnit** cobrindo o worker e a resolução de jobs (`JobServiceResolver`, `EmailJobWorker`). O pipeline de **CI roda a suíte de testes a cada push** — veja o badge no topo.
-
-## 🧠 Decisões técnicas
-
-- **Clean Architecture** em camadas (`Domain` não depende de ninguém; `Infrastructure` implementa as interfaces do domínio) — trocar RabbitMQ por outra fila não altera a regra de negócio.
-- **Background worker separado** da API: escalam de forma independente e um deploy não derruba o outro.
-- **MongoDB** para status dos jobs: escritas rápidas e schema flexível para diferentes tipos de tarefa.
-- **`.env.example`** versionado para que qualquer pessoa suba o ambiente em um comando.
-
-## 🗺️ Roadmap
-
-- [ ] Badge de cobertura de testes
-- [ ] Retry com política de DLQ (dead-letter queue)
-- [ ] Observabilidade com OpenTelemetry
-- [ ] GIF do fluxo assíncrono rodando (Swagger → fila → worker)
-
-## 📄 Licença
-
-Distribuído sob a licença [MIT](LICENSE).
+- ampliar a cobertura de testes
+- política de retry com dead-letter queue
